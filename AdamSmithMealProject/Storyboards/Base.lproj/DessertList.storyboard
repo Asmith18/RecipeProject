@@ -16,26 +16,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="hIN-ca-hSr" imageView="YYD-dx-vmR" style="IBUITableViewCellStyleDefault" id="Jsc-kN-iZk">
-                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="desserts" rowHeight="92" id="Jsc-kN-iZk" customClass="DessertListTableViewCell" customModule="AdamSmithMealProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="390" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jsc-kN-iZk" id="L0p-jt-ufI">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hIN-ca-hSr">
-                                            <rect key="frame" x="59" y="0.0" width="311" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pz-48-rkj">
+                                            <rect key="frame" x="20" y="31" width="350" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="birthday.cake.fill" catalog="system" id="YYD-dx-vmR">
-                                            <rect key="frame" x="20.333333333333336" y="11" width="23.333333333333332" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Pz-48-rkj" firstAttribute="leading" secondItem="L0p-jt-ufI" secondAttribute="leadingMargin" id="0Pn-9p-5nj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2Pz-48-rkj" secondAttribute="bottom" constant="21" id="FHe-XT-Jgz"/>
+                                        <constraint firstItem="2Pz-48-rkj" firstAttribute="top" secondItem="L0p-jt-ufI" secondAttribute="topMargin" constant="20" id="WAW-Dd-nCJ"/>
+                                        <constraint firstItem="2Pz-48-rkj" firstAttribute="trailing" secondItem="L0p-jt-ufI" secondAttribute="trailingMargin" id="i3S-HQ-gDl"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dessertNameTextLabel" destination="2Pz-48-rkj" id="mKh-k7-uzT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -69,7 +73,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="birthday.cake.fill" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

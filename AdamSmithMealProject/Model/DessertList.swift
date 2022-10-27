@@ -15,7 +15,7 @@ struct Desserts: Decodable {
     enum CodingKeys: String, CodingKey {
         case name = "strMeal"
         case imageString = "strMealThumb"
-        case id = "idmeal"
+        case id = "idMeal"
     }
     
     let name: String

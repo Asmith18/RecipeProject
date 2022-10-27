@@ -9,7 +9,7 @@ import Foundation
 
 enum DessertEndpoint {
     
-    case filterDessert(String)
+    case filterDessert
     case dessertById(String)
     
     var path: String {
