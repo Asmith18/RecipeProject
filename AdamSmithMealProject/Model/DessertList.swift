@@ -8,10 +8,10 @@
 import Foundation
 
 struct DessertList: Decodable {
-    let meals: [Meals]
+    let meals: [Desserts]
 }
 
-struct Meals: Decodable {
+struct Desserts: Decodable {
     enum CodingKeys: String, CodingKey {
         case name = "strMeal"
         case imageString = "strMealThumb"

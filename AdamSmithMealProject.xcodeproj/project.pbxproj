@@ -16,7 +16,10 @@
 		C2927E62290B0D6B009A265B /* DessertListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E61290B0D6B009A265B /* DessertListTableViewController.swift */; };
 		C2927E67290B0DD0009A265B /* DessertDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2927E66290B0DD0009A265B /* DessertDetail.storyboard */; };
 		C2927E69290B0E02009A265B /* DessertDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E68290B0E02009A265B /* DessertDetailViewController.swift */; };
-		C2927E6C290B12DE009A265B /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E6B290B12DE009A265B /* NetworkController.swift */; };
+		C2927E6C290B12DE009A265B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E6B290B12DE009A265B /* APIService.swift */; };
+		C2927E70290B2F16009A265B /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E6F290B2F16009A265B /* ResultError.swift */; };
+		C2927E72290B3051009A265B /* DessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E71290B3051009A265B /* DessertService.swift */; };
+		C2927E74290B30EB009A265B /* DessertEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E73290B30EB009A265B /* DessertEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +34,10 @@
 		C2927E61290B0D6B009A265B /* DessertListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListTableViewController.swift; sourceTree = "<group>"; };
 		C2927E66290B0DD0009A265B /* DessertDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DessertDetail.storyboard; sourceTree = "<group>"; };
 		C2927E68290B0E02009A265B /* DessertDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewController.swift; sourceTree = "<group>"; };
-		C2927E6B290B12DE009A265B /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		C2927E6B290B12DE009A265B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C2927E6F290B2F16009A265B /* ResultError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
+		C2927E71290B3051009A265B /* DessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertService.swift; sourceTree = "<group>"; };
+		C2927E73290B30EB009A265B /* DessertEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +136,10 @@
 		C2927E6E290B12EE009A265B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C2927E6B290B12DE009A265B /* NetworkController.swift */,
+				C2927E6B290B12DE009A265B /* APIService.swift */,
+				C2927E6F290B2F16009A265B /* ResultError.swift */,
+				C2927E71290B3051009A265B /* DessertService.swift */,
+				C2927E73290B30EB009A265B /* DessertEndpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -207,9 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2927E6C290B12DE009A265B /* NetworkController.swift in Sources */,
+				C2927E6C290B12DE009A265B /* APIService.swift in Sources */,
+				C2927E74290B30EB009A265B /* DessertEndpoint.swift in Sources */,
 				C2927E62290B0D6B009A265B /* DessertListTableViewController.swift in Sources */,
+				C2927E72290B3051009A265B /* DessertService.swift in Sources */,
 				C2927E4A29070922009A265B /* AppDelegate.swift in Sources */,
+				C2927E70290B2F16009A265B /* ResultError.swift in Sources */,
 				C2927E60290B0D52009A265B /* DessertList.swift in Sources */,
 				C2927E4C29070922009A265B /* SceneDelegate.swift in Sources */,
 				C2927E69290B0E02009A265B /* DessertDetailViewController.swift in Sources */,
