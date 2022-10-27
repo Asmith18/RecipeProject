@@ -14,11 +14,9 @@ struct DessertList: Decodable {
 struct Desserts: Decodable {
     enum CodingKeys: String, CodingKey {
         case name = "strMeal"
-        case imageString = "strMealThumb"
         case id = "idMeal"
     }
     
     let name: String
-    let imageString: String
     let id: String
 }

@@ -22,6 +22,8 @@
 		C2927E74290B30EB009A265B /* DessertEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E73290B30EB009A265B /* DessertEndpoint.swift */; };
 		C2927E76290B37D3009A265B /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E75290B37D3009A265B /* DessertListViewModel.swift */; };
 		C2927E78290B40A6009A265B /* DessertListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E77290B40A6009A265B /* DessertListTableViewCell.swift */; };
+		C2927E7A290B435D009A265B /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E79290B435D009A265B /* Dessert.swift */; };
+		C2927E7C290B491D009A265B /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E7B290B491D009A265B /* DessertDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C2927E73290B30EB009A265B /* DessertEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertEndpoint.swift; sourceTree = "<group>"; };
 		C2927E75290B37D3009A265B /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
 		C2927E77290B40A6009A265B /* DessertListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListTableViewCell.swift; sourceTree = "<group>"; };
+		C2927E79290B435D009A265B /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		C2927E7B290B491D009A265B /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C2927E5F290B0D52009A265B /* DessertList.swift */,
+				C2927E79290B435D009A265B /* Dessert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C2927E68290B0E02009A265B /* DessertDetailViewController.swift */,
+				C2927E7B290B491D009A265B /* DessertDetailViewModel.swift */,
 			);
 			path = DessertDetail;
 			sourceTree = "<group>";
@@ -228,10 +234,12 @@
 				C2927E62290B0D6B009A265B /* DessertListTableViewController.swift in Sources */,
 				C2927E72290B3051009A265B /* DessertListService.swift in Sources */,
 				C2927E4A29070922009A265B /* AppDelegate.swift in Sources */,
+				C2927E7C290B491D009A265B /* DessertDetailViewModel.swift in Sources */,
 				C2927E70290B2F16009A265B /* ResultError.swift in Sources */,
 				C2927E78290B40A6009A265B /* DessertListTableViewCell.swift in Sources */,
 				C2927E60290B0D52009A265B /* DessertList.swift in Sources */,
 				C2927E4C29070922009A265B /* SceneDelegate.swift in Sources */,
+				C2927E7A290B435D009A265B /* Dessert.swift in Sources */,
 				C2927E69290B0E02009A265B /* DessertDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

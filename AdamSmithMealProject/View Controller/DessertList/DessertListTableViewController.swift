@@ -23,7 +23,6 @@ class DessertListTableViewController: UITableViewController {
         return viewModel.meals.count
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "desserts", for: indexPath) as? DessertListTableViewCell else { return UITableViewCell() }
         
@@ -34,7 +33,13 @@ class DessertListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        return
+        let storyboard = UIStoryboard(name: "DessertDetail", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "detail") as? DessertDetailViewController else {
+            return
+        }
+        viewController.viewModel = DessertDetailViewModel()
+        viewController.viewModel.dessert = viewModel.meals[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

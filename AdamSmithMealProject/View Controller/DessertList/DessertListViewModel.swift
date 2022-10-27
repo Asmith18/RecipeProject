@@ -14,7 +14,6 @@ protocol DessertListViewModelDelegate: DessertListTableViewController {
 class DessertListViewModel {
     
     var meals: [Desserts] = []
-    var meal: Desserts?
     weak var delegate: DessertListViewModelDelegate?
     private let service = DessertListService()
     
