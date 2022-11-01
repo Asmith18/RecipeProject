@@ -21,7 +21,6 @@ class DessertDetailViewModel {
     init(recipe: Recipe, delegate: DessertDetailViewModelDelegate) {
         self.delegate = delegate
         self.recipe = recipe
-        self.fetchDessert()
     }
     
     func fetchDessert() {
