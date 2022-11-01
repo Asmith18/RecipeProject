@@ -11,7 +11,7 @@
         <!--Dessert Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="DessertDetailViewController" customModule="AdamSmithMealProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" id="Y6W-OH-hqX" customClass="DessertDetailViewController" customModule="AdamSmithMealProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,13 +46,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHk-Ip-lwk">
-                                <rect key="frame" x="16" y="472.66666666666669" width="93" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="452.66666666666669" width="93" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DkY-Jv-pKa">
-                                <rect key="frame" x="16" y="501" width="358" height="293.33333333333326"/>
+                                <rect key="frame" x="16" y="481" width="358" height="293.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaZ-yJ-WZp">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
@@ -61,7 +61,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-fH-XXI">
-                                        <rect key="frame" x="0.0" y="30.333333333333371" width="358" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="30.333333333333314" width="358" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -115,28 +115,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="293.32999999999998" id="kIW-Qh-x4e"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3La-fR-DNh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="95" id="6ba-tn-4rb"/>
+                            <constraint firstItem="DkY-Jv-pKa" firstAttribute="top" secondItem="DHk-Ip-lwk" secondAttribute="bottom" constant="8" symbolic="YES" id="FXf-4m-mKD"/>
                             <constraint firstItem="pxZ-LX-OwS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="FiK-OK-Hgh"/>
-                            <constraint firstItem="DHk-Ip-lwk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="QC5-hA-MKl"/>
+                            <constraint firstItem="DkY-Jv-pKa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="GJ0-dW-GVH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nO9-KT-4bC" secondAttribute="trailing" constant="16" id="Rxj-lP-DNh"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DkY-Jv-pKa" secondAttribute="trailing" constant="16" id="SOs-qb-ubH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DHk-Ip-lwk" secondAttribute="trailing" constant="281" id="Sva-4x-2HL"/>
                             <constraint firstItem="3La-fR-DNh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Tc4-Hl-Ktd"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DkY-Jv-pKa" secondAttribute="bottom" constant="15.67" id="Wlm-Tg-p7N"/>
-                            <constraint firstItem="DHk-Ip-lwk" firstAttribute="top" secondItem="pxZ-LX-OwS" secondAttribute="bottom" constant="25" id="bLd-EW-n05"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DHk-Ip-lwk" secondAttribute="trailing" constant="281" id="djQ-GY-c5e"/>
+                            <constraint firstItem="DHk-Ip-lwk" firstAttribute="top" secondItem="pxZ-LX-OwS" secondAttribute="bottom" constant="5" id="cKc-C5-Skj"/>
                             <constraint firstItem="nO9-KT-4bC" firstAttribute="top" secondItem="3La-fR-DNh" secondAttribute="bottom" constant="8.6666666666666288" id="guV-G3-AP9"/>
+                            <constraint firstItem="DHk-Ip-lwk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="gvV-yA-UJb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DkY-Jv-pKa" secondAttribute="bottom" constant="35.670000000000002" id="qLl-Gj-Pfy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3La-fR-DNh" secondAttribute="trailing" constant="95" id="qUc-hJ-mSI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DkY-Jv-pKa" secondAttribute="trailing" constant="16" id="rGO-Ir-xQt"/>
                             <constraint firstItem="pxZ-LX-OwS" firstAttribute="top" secondItem="nO9-KT-4bC" secondAttribute="bottom" constant="8" symbolic="YES" id="rgO-No-ED6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pxZ-LX-OwS" secondAttribute="trailing" constant="16" id="tdO-cq-rMh"/>
-                            <constraint firstItem="DkY-Jv-pKa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="w2l-Il-eTs"/>
                             <constraint firstItem="nO9-KT-4bC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="y9x-ld-MsX"/>
                         </constraints>
                     </view>

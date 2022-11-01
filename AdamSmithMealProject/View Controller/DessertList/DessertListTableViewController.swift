@@ -20,26 +20,30 @@ class DessertListTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.meals.count
+        return viewModel.recipes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "desserts", for: indexPath) as? DessertListTableViewCell else { return UITableViewCell() }
         
-        let list = viewModel.meals[indexPath.row]
-        cell.updateviews(dessert: list)
+        let recipe = viewModel.recipes[indexPath.row]
+        cell.updateviews(recipe: recipe)
         
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "DessertDetail", bundle: nil)
-        guard let viewController = storyboard.instantiateViewController(withIdentifier: "detail") as? DessertDetailViewController else {
-            return
-        }
-        viewController.viewModel = DessertDetailViewModel()
-        viewController.viewModel.dessert = viewModel.meals[indexPath.row]
-        self.navigationController?.pushViewController(viewController, animated: true)
+    
+    
+//    I want to display the details of a meal object on the detail vc
+//    i need to do a network call that takes in an id
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toDetailVC",
+              let index = tableView.indexPathForSelectedRow,
+              let destination = segue.destination as? DessertDetailViewController else { return }
+        let dessert = viewModel.recipes[index.row]
+        destination.viewModel = DessertDetailViewModel(recipe: dessert, delegate: destination)
     }
 }
 

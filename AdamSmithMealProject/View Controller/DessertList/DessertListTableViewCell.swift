@@ -12,7 +12,7 @@ class DessertListTableViewCell: UITableViewCell {
     //MARK: - Outlets
     @IBOutlet weak var dessertNameTextLabel: UILabel!
     
-    func updateviews(dessert: Desserts) {
-        dessertNameTextLabel.text = dessert.name
+    func updateviews(recipe: Recipe) {
+        dessertNameTextLabel.text = recipe.name
     }
 }

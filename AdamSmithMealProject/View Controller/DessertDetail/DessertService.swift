@@ -2,20 +2,20 @@
 //  DessertService.swift
 //  AdamSmithMealProject
 //
-//  Created by adam smith on 10/27/22.
+//  Created by adam smith on 10/28/22.
 //
 
 import Foundation
 
-struct DessertListService {
+struct DessertService {
     
     private let apiService = APIService()
     
-    func fetchDessertList(for endpoint: DessertEndpoint, completion: @escaping (Result<MealCategories, ResultError>) -> Void) {
+    func fetchDessertList(for endpoint: DessertEndpoint, completion: @escaping (Result<DessertCategory, ResultError>) -> Void) {
         
         guard let finalURL = endpoint.fullURL else {
             completion(.failure(.badURL))
-            return 
+            return
         }
         
         let urlRequest = URLRequest(url: finalURL)
@@ -24,8 +24,8 @@ struct DessertListService {
             switch result {
             case .success(let data):
                 do {
-                    let dessertList = try JSONDecoder().decode(MealCategories.self, from: data)
-                    completion(.success(dessertList))
+                    let dessertCategory = try JSONDecoder().decode(DessertCategory.self, from: data)
+                    completion(.success(dessertCategory))
                 } catch {
                     completion(.failure(.errorDecoding))
                 }

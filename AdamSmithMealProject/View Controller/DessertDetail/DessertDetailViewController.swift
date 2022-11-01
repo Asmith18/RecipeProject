@@ -28,14 +28,29 @@ class DessertDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = DessertDetailViewModel()
     }
     
     func updateViews() {
+        guard let dessert = viewModel.recipeDetail else { return }
+        dessertNameLabel.text = dessert.name
+        dessetInstructionsTextView.text = dessert.instructions
+        ingredient1Label.text = dessert.ing1
+        ingredient2Label.text = dessert.ing2
+        ingredient3Label.text = dessert.ing3
+        ingredient4Label.text = dessert.ing4
+        ingredient5Label.text = dessert.ing5
+        ingredient6Label.text = dessert.ing6
+        ingredient7Label.text = dessert.ing7
+        ingredient8Label.text = dessert.ing8
+        ingredient9Label.text = dessert.ing9
+        ingredient10Label.text = dessert.ing10
     }
 }
 
-extension DessertDetailViewController: DesseertDetailViewModelDelegate {
+extension DessertDetailViewController: DessertDetailViewModelDelegate {
     func dessertHasData() {
+        DispatchQueue.main.async {
+            self.updateViews()
+        }
     }
 }

@@ -13,11 +13,12 @@ protocol DessertListViewModelDelegate: DessertListTableViewController {
 
 class DessertListViewModel {
     
-    var meals: [Desserts] = []
+    var recipes: [Recipe] = []
+    var recipe: Recipe?
     weak var delegate: DessertListViewModelDelegate?
     private let service = DessertListService()
     
-    init(delegate: DessertListViewModelDelegate?) {
+    init(delegate: DessertListViewModelDelegate) {
         self.delegate = delegate
     }
     
@@ -27,9 +28,13 @@ class DessertListViewModel {
             case .failure(let error):
                 print(error)
             case .success(let list):
-                self?.meals = list.meals
+                self?.recipes = list.recipes
                 self?.delegate?.dessertListHasData()
             }
         }
     }
 }
+
+// step 1 - pass dessert object to DessertDetailViewModel
+// step 2 - use that id to fetch the dessert meal
+// step 3 - present dessert list meal

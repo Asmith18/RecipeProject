@@ -12,7 +12,7 @@
 		C2927E5129070922009A265B /* DessertList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2927E4F29070922009A265B /* DessertList.storyboard */; };
 		C2927E5329070924009A265B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2927E5229070924009A265B /* Assets.xcassets */; };
 		C2927E5629070924009A265B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2927E5429070924009A265B /* LaunchScreen.storyboard */; };
-		C2927E60290B0D52009A265B /* DessertList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E5F290B0D52009A265B /* DessertList.swift */; };
+		C2927E60290B0D52009A265B /* MealCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E5F290B0D52009A265B /* MealCategories.swift */; };
 		C2927E62290B0D6B009A265B /* DessertListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E61290B0D6B009A265B /* DessertListTableViewController.swift */; };
 		C2927E67290B0DD0009A265B /* DessertDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2927E66290B0DD0009A265B /* DessertDetail.storyboard */; };
 		C2927E69290B0E02009A265B /* DessertDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E68290B0E02009A265B /* DessertDetailViewController.swift */; };
@@ -22,8 +22,9 @@
 		C2927E74290B30EB009A265B /* DessertEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E73290B30EB009A265B /* DessertEndpoint.swift */; };
 		C2927E76290B37D3009A265B /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E75290B37D3009A265B /* DessertListViewModel.swift */; };
 		C2927E78290B40A6009A265B /* DessertListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E77290B40A6009A265B /* DessertListTableViewCell.swift */; };
-		C2927E7A290B435D009A265B /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E79290B435D009A265B /* Dessert.swift */; };
+		C2927E7A290B435D009A265B /* DessertCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E79290B435D009A265B /* DessertCategory.swift */; };
 		C2927E7C290B491D009A265B /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E7B290B491D009A265B /* DessertDetailViewModel.swift */; };
+		C2927E7E290C3CD5009A265B /* DessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E7D290C3CD5009A265B /* DessertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,7 @@
 		C2927E5229070924009A265B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2927E5529070924009A265B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2927E5729070924009A265B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2927E5F290B0D52009A265B /* DessertList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertList.swift; sourceTree = "<group>"; };
+		C2927E5F290B0D52009A265B /* MealCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategories.swift; sourceTree = "<group>"; };
 		C2927E61290B0D6B009A265B /* DessertListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListTableViewController.swift; sourceTree = "<group>"; };
 		C2927E66290B0DD0009A265B /* DessertDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DessertDetail.storyboard; sourceTree = "<group>"; };
 		C2927E68290B0E02009A265B /* DessertDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewController.swift; sourceTree = "<group>"; };
@@ -44,8 +45,9 @@
 		C2927E73290B30EB009A265B /* DessertEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertEndpoint.swift; sourceTree = "<group>"; };
 		C2927E75290B37D3009A265B /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
 		C2927E77290B40A6009A265B /* DessertListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListTableViewCell.swift; sourceTree = "<group>"; };
-		C2927E79290B435D009A265B /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		C2927E79290B435D009A265B /* DessertCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCategory.swift; sourceTree = "<group>"; };
 		C2927E7B290B491D009A265B /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
+		C2927E7D290C3CD5009A265B /* DessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,6 @@
 				C2927E6E290B12EE009A265B /* Network */,
 				C2927E64290B0D7E009A265B /* Model */,
 				C2927E65290B0D8D009A265B /* View Controller */,
-				C2927E5E290B0A7F009A265B /* Storyboards */,
 				C2927E5D290B0A46009A265B /* Resources */,
 			);
 			path = AdamSmithMealProject;
@@ -99,15 +100,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C2927E5E290B0A7F009A265B /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				C2927E4F29070922009A265B /* DessertList.storyboard */,
-				C2927E66290B0DD0009A265B /* DessertDetail.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		C2927E63290B0D6F009A265B /* DessertList */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +107,7 @@
 				C2927E75290B37D3009A265B /* DessertListViewModel.swift */,
 				C2927E77290B40A6009A265B /* DessertListTableViewCell.swift */,
 				C2927E71290B3051009A265B /* DessertListService.swift */,
+				C2927E4F29070922009A265B /* DessertList.storyboard */,
 			);
 			path = DessertList;
 			sourceTree = "<group>";
@@ -122,8 +115,8 @@
 		C2927E64290B0D7E009A265B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C2927E5F290B0D52009A265B /* DessertList.swift */,
-				C2927E79290B435D009A265B /* Dessert.swift */,
+				C2927E5F290B0D52009A265B /* MealCategories.swift */,
+				C2927E79290B435D009A265B /* DessertCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +135,8 @@
 			children = (
 				C2927E68290B0E02009A265B /* DessertDetailViewController.swift */,
 				C2927E7B290B491D009A265B /* DessertDetailViewModel.swift */,
+				C2927E7D290C3CD5009A265B /* DessertService.swift */,
+				C2927E66290B0DD0009A265B /* DessertDetail.storyboard */,
 			);
 			path = DessertDetail;
 			sourceTree = "<group>";
@@ -237,9 +232,10 @@
 				C2927E7C290B491D009A265B /* DessertDetailViewModel.swift in Sources */,
 				C2927E70290B2F16009A265B /* ResultError.swift in Sources */,
 				C2927E78290B40A6009A265B /* DessertListTableViewCell.swift in Sources */,
-				C2927E60290B0D52009A265B /* DessertList.swift in Sources */,
+				C2927E60290B0D52009A265B /* MealCategories.swift in Sources */,
+				C2927E7E290C3CD5009A265B /* DessertService.swift in Sources */,
 				C2927E4C29070922009A265B /* SceneDelegate.swift in Sources */,
-				C2927E7A290B435D009A265B /* Dessert.swift in Sources */,
+				C2927E7A290B435D009A265B /* DessertCategory.swift in Sources */,
 				C2927E69290B0E02009A265B /* DessertDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

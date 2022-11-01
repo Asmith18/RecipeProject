@@ -39,6 +39,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dessertNameTextLabel" destination="2Pz-48-rkj" id="mKh-k7-uzT"/>
+                                    <segue destination="bDJ-tI-1Fw" kind="show" identifier="toDetailVC" id="AaM-zU-ba7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,6 +53,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTE-Xh-3uA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1133.8461538461538" y="-73.222748815165872"/>
+        </scene>
+        <!--detail-->
+        <scene sceneID="1Gg-aZ-bqG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="detail" storyboardName="DessertDetail" referencedIdentifier="detail" id="bDJ-tI-1Fw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kgu-WX-Oa1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pi-DS-2rN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="-73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="idl-Yj-Kbv">
