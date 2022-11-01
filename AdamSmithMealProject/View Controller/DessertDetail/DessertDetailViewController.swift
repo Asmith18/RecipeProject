@@ -12,7 +12,7 @@ class DessertDetailViewController: UIViewController {
     var viewModel: DessertDetailViewModel!
     
     //MARK: - Outlets
-    @IBOutlet weak var dessertImageView: UIImageView!
+    @IBOutlet weak var dessertImageView: ServiceRequestingImageView!
     @IBOutlet weak var dessertNameLabel: UILabel!
     @IBOutlet weak var dessetInstructionsTextView: UITextView!
     @IBOutlet weak var ing1Label: UILabel!
@@ -65,6 +65,15 @@ class DessertDetailViewController: UIViewController {
         ing18Label.text = "\(dessert.ing18 ?? "") \(dessert.measure18 ?? "")"
         ing19Label.text = "\(dessert.ing19 ?? "") \(dessert.measure19 ?? "")"
         ing20Label.text = "\(dessert.ing20 ?? "") \(dessert.measure20 ?? "")"
+        fetchImage()
+    }
+    
+    func fetchImage() {
+        guard let image = viewModel.recipeDetail?.imageString,
+        let url = URL(string: image) else {
+            return
+        }
+        dessertImageView.fetchImage(using: url)
     }
 }
 

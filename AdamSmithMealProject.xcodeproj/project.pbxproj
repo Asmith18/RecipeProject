@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23F6BFC2911B24A005AE5DE /* ServiceRequestingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23F6BFB2911B24A005AE5DE /* ServiceRequestingImageView.swift */; };
 		C2927E4A29070922009A265B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E4929070922009A265B /* AppDelegate.swift */; };
 		C2927E4C29070922009A265B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2927E4B29070922009A265B /* SceneDelegate.swift */; };
 		C2927E5129070922009A265B /* DessertList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2927E4F29070922009A265B /* DessertList.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C23F6BFB2911B24A005AE5DE /* ServiceRequestingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestingImageView.swift; sourceTree = "<group>"; };
 		C2927E4629070922009A265B /* AdamSmithMealProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdamSmithMealProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2927E4929070922009A265B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2927E4B29070922009A265B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				C2927E6B290B12DE009A265B /* APIService.swift */,
 				C2927E6F290B2F16009A265B /* ResultError.swift */,
 				C2927E73290B30EB009A265B /* DessertEndpoint.swift */,
+				C23F6BFB2911B24A005AE5DE /* ServiceRequestingImageView.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2927E6C290B12DE009A265B /* APIService.swift in Sources */,
+				C23F6BFC2911B24A005AE5DE /* ServiceRequestingImageView.swift in Sources */,
 				C2927E76290B37D3009A265B /* DessertListViewModel.swift in Sources */,
 				C2927E74290B30EB009A265B /* DessertEndpoint.swift in Sources */,
 				C2927E62290B0D6B009A265B /* DessertListTableViewController.swift in Sources */,
